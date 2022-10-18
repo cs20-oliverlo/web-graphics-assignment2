@@ -31,3 +31,23 @@ ctx.fillRect(150, 100, 150, 550);
 ctx.fillRect(170, 40, 110, 60);
 // Small Top
 ctx.fillRect(190, 20, 70, 20);
+
+// Draw Small Windows
+ctx.fillStyle = "white";
+ctx. fillRect(40, 200, 10, 10);
+
+// Draw Thick Windows
+let thickRectangleY = 334;
+for (let i = 0; i < 6; i++) {
+    thickRectangleY += 41;
+    ctx.fillStyle = "white";
+    ctx.fillRect(20, thickRectangleY, 110, 20);
+}
+
+// Draw Long Windows
+let longRectangleX = 145;
+for (let i = 0; i < 5; i++) {
+    longRectangleX += 25;
+    ctx.fillStyle = "white";
+    ctx.fillRect(longRectangleX, 125, 10, 475);
+}
