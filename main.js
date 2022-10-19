@@ -32,9 +32,14 @@ ctx.fillRect(170, 40, 110, 60);
 // Small Top
 ctx.fillRect(190, 20, 70, 20);
 
-// Draw Small Windows
-ctx.fillStyle = "white";
-ctx. fillRect(40, 200, 10, 10);
+// Draw Small Windows X-Axis
+let smallRectangleX = 17;
+// let rectangleRow1 = 
+    for (let i = 0; i < 4; i ++) {
+        smallRectangleX += 23
+        ctx.fillStyle = "white";
+        ctx. fillRect(smallRectangleX, 200, 10, 10);
+    }
 
 // Draw Thick Windows
 let thickRectangleY = 334;
