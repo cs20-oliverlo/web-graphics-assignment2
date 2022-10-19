@@ -33,13 +33,16 @@ ctx.fillRect(170, 40, 110, 60);
 ctx.fillRect(190, 20, 70, 20);
 
 // Draw Small Windows X-Axis
-let smallRectangleX = 17;
-// let rectangleRow1 = 
-    for (let i = 0; i < 4; i ++) {
-        smallRectangleX += 23
+let smallRectangleY = 200;
+for (let i = 0; i < 6; i++) {        
+    let smallRectangleX = 17;
+    for (let i = 0; i < 4; i++) {
+        smallRectangleX += 23;
         ctx.fillStyle = "white";
-        ctx. fillRect(smallRectangleX, 200, 10, 10);
+        ctx.fillRect(smallRectangleX, smallRectangleY, 10, 10);
     }
+    smallRectangleY += 25;
+}
 
 // Draw Thick Windows
 let thickRectangleY = 334;
